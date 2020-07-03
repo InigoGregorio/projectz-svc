@@ -13,7 +13,11 @@ appRouter.get( '/services/projects/:id', function( req, res ) {
 })
 
 appRouter.get( '/services/hello', function( req, res ) {
-  res.json({ code: 'success', payload: 'World' })
+  res.json({code: 'success', payload: 'World'})
+})
+
+appRouter.get( '/services/bye', function( req, res ) {
+  res.json({code: 'success', payload: 'Hello'})
 })
 
 module.exports = appRouter
